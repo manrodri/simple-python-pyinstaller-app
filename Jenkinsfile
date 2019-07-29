@@ -1,5 +1,4 @@
 pipeline {
-
     agent none
     stages {
         stage('Build') {
@@ -26,3 +25,6 @@ pipeline {
                     junit 'test-reports/results.xml' 
                 }
             }
+        }
+    }
+}
